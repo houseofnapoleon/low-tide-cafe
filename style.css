@@ -1,17 +1,23 @@
+```css
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* GENERAL */
+
 body {
   font-family: Arial, sans-serif;
+  color: #333;
 }
 
-/* NAVIGATION */
+/* HEADER */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,69 +26,88 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 30px 60px;
-  z-index: 10;
+  padding: 18px 60px;
+
+  background-color: #f7f3ef;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  z-index: 1000;
 }
 
 .logo-wrap {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .logo-icon {
-  width: 55px;
+  width: 48px;
+  height: auto;
 }
 
 .logo-text {
-  height: 38px;
+  height: 34px;
+  width: auto;
 }
+
+/* NAVIGATION */
 
 nav {
   display: flex;
-  gap: 35px;
+  gap: 32px;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: #1f4f63;
   font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.7;
 }
 
 /* HERO */
 
 .hero {
   position: relative;
-  height: 100vh;
 
-  background-image: url("images/hero.jpeg");
+  height: 100vh;
+  min-height: 700px;
+
+  background-image: url("hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 
   display: flex;
   align-items: center;
+
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
 
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.28);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
 
-  max-width: 700px;
-  margin-left: 8%;
+  max-width: 650px;
+
   color: white;
 }
 
 .hero-content h1 {
   font-size: 4rem;
   line-height: 1.1;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .hero-content p {
@@ -91,6 +116,8 @@ nav a {
   margin-bottom: 35px;
 }
 
+/* BUTTONS */
+
 .hero-buttons {
   display: flex;
   gap: 16px;
@@ -98,10 +125,11 @@ nav a {
 
 .btn-primary,
 .btn-secondary {
+  text-decoration: none;
   padding: 14px 28px;
   border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -109,7 +137,46 @@ nav a {
   color: white;
 }
 
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
 .btn-secondary {
   border: 1px solid white;
   color: white;
 }
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 18px 24px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+```
