@@ -1,4 +1,4 @@
-```css
+
 /* RESET */
 
 * {
@@ -231,6 +231,7 @@ nav a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
+  }
   
   @media (max-width: 768px) {
 
@@ -243,8 +244,6 @@ nav a:hover {
   .footer-right {
     text-align: center;
   }
-
-}
 
 }
 
