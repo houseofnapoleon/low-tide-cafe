@@ -150,6 +150,59 @@ nav a:hover {
   background: rgba(255,255,255,0.1);
 }
 
+```css
+/* FOOTER */
+
+.footer {
+  background: #0f4d63;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 70px 8%;
+
+  color: #f7f3ef;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: right;
+}
+
+.footer-right a {
+  color: #f7f3ef;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-right a:hover {
+  opacity: 0.7;
+}
+
 /* MOBILE */
 
 @media (max-width: 900px) {
@@ -178,5 +231,20 @@ nav a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
+  
+  @media (max-width: 768px) {
+
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
 }
-```
+
+}
+
