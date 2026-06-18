@@ -205,6 +205,19 @@ nav a:hover {
   opacity: 1;
 }
 
+.location-address {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.location-hours {
+  color: #163847;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
 /* MOBILE */
 
 @media (max-width: 900px) {
