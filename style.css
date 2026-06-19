@@ -205,17 +205,34 @@ nav a:hover {
   opacity: 1;
 }
 
+.location-card h3 {
+  color: #f7f3ef;
+  margin-bottom: 12px;
+}
+
 .location-address {
-  color: #666;
+  color: rgba(247,243,239,0.75);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .location-hours {
-  color: #163847;
-  font-weight: 600;
+  color: #f7f3ef;
+  font-weight: 500;
   line-height: 1.7;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.location-card a {
+  color: #f7f3ef;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  gap: 60px;
+}
+
 }
 
 /* MOBILE */
