@@ -206,7 +206,7 @@ nav a:hover {
 }
 
 .location-card h3 {
-  color: #f7f3ef;
+  color: #0f4d63;
   margin-bottom: 12px;
 }
 
@@ -217,14 +217,14 @@ nav a:hover {
 }
 
 .location-hours {
-  color: #f7f3ef;
+  color: #0f4d63;
   font-weight: 500;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
 .location-card a {
-  color: #f7f3ef;
+  color: #0f4d63;
   text-decoration: none;
 }
 
