@@ -209,7 +209,7 @@ nav a:hover {
 
 .locations-section {
   background: #f7f3ef;
-  padding: 90px 8%;
+  padding: 80px 8% 90px;
 }
 
 .locations-header {
@@ -218,18 +218,20 @@ nav a:hover {
 }
 
 .locations-header h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
   color: #0f4d63;
-  font-size: 2.5rem;
   margin-bottom: 12px;
 }
 
 .locations-header p {
-  color: #666;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: #777;
+  letter-spacing: 0.5px;
 }
 
 .locations-grid {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
 
   display: grid;
@@ -238,68 +240,97 @@ nav a:hover {
 }
 
 .location-card {
-  padding: 0 40px;
+  position: relative;
 }
 
-.location-card:first-child {
-  border-right: 1px solid rgba(15, 77, 99, 0.08);
+.location-card:first-child::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  width: 1px;
+  height: 260px;
+  background: rgba(15, 77, 99, 0.08);
 }
 
 .location-card h3 {
-  font-size: 2rem;
-  color: #0f4d63;
-  margin-bottom: 24px;
+  font-size: 1.6rem;
   font-weight: 600;
+  color: #0f4d63;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
 }
 
 .location-address {
+  font-size: 1rem;
   color: #666;
-  font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .location-hours {
+  font-size: 1rem;
   color: #0f4d63;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 2;
   margin-bottom: 32px;
 }
 
 .location-card a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
   color: #0f4d63;
   text-decoration: none;
+  font-size: 0.95rem;
   font-weight: 600;
-  border-bottom: 1px solid #0f4d63;
-  padding-bottom: 2px;
-  transition: opacity 0.3s ease;
+
+  transition: all 0.3s ease;
+}
+
+.location-card a::after {
+  content: "→";
+  transition: transform 0.3s ease;
+}
+
+.location-card a:hover::after {
+  transform: translateX(4px);
 }
 
 .location-card a:hover {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
 
+  .locations-section {
+    padding: 60px 8%;
+  }
+
   .locations-grid {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 50px;
   }
 
   .location-card {
-    padding: 0;
     text-align: center;
   }
 
-  .location-card:first-child {
-    border-right: none;
-    border-bottom: 1px solid rgba(15, 77, 99, 0.08);
-    padding-bottom: 60px;
+  .location-card:first-child::after {
+    display: none;
   }
 
+  .location-card {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(15, 77, 99, 0.08);
+  }
+
+  .location-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
 /* MOBILE */
