@@ -230,10 +230,10 @@ nav a:hover {
 }
 
 .location-card h3 {
-  font-size: 3rem;
-  line-height: 1.1;
+  font-size: 2rem;
   color: #0f4d63;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .location-address {
