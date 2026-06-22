@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Quidity';
+  src: url('fonts/Quidity.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* RESET */
 
