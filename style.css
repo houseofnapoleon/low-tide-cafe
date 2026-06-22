@@ -207,21 +207,22 @@ nav a:hover {
 
 /* LOCATIONS SECTION */
 
-.locations {
+.locations-section {
   background: #f7f3ef;
-  padding: 90px 8%;
+  padding: 80px 8%;
 }
 
-.locations-container {
+.locations-grid {
   max-width: 1000px;
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 
 .location-card {
-  padding: 0 50px;
+  padding: 0 40px;
 }
 
 .location-card:first-child {
@@ -229,27 +230,30 @@ nav a:hover {
 }
 
 .location-card h3 {
-  font-size: 2.2rem;
+  font-size: 3rem;
+  line-height: 1.1;
   color: #0f4d63;
-  margin-bottom: 24px;
-  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .location-address {
+  font-size: 1.2rem;
   color: #666;
-  line-height: 1.8;
-  margin-bottom: 24px;
+  line-height: 1.7;
+  margin-bottom: 40px;
 }
 
 .location-hours {
+  font-size: 1.2rem;
   color: #0f4d63;
   line-height: 1.8;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .location-card a {
   color: #0f4d63;
   text-decoration: none;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -261,9 +265,9 @@ nav a:hover {
 
 @media (max-width: 768px) {
 
-  .locations-container {
+  .locations-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 60px;
   }
 
   .location-card {
@@ -274,7 +278,7 @@ nav a:hover {
   .location-card:first-child {
     border-right: none;
     border-bottom: 1px solid rgba(15, 77, 99, 0.12);
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
 }
