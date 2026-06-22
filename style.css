@@ -209,25 +209,25 @@ nav a:hover {
 
 .locations-section {
   background: #f7f3ef;
-  padding: 80px 8% 90px;
+  padding: 40px 8% 50px;
 }
 
 .locations-header {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .locations-header h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #0f4d63;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .locations-header p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #777;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 
 .locations-grid {
@@ -257,7 +257,7 @@ nav a:hover {
   font-size: 1.6rem;
   font-weight: 600;
   color: #0f4d63;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   letter-spacing: 0.3px;
 }
 
@@ -265,14 +265,14 @@ nav a:hover {
   font-size: 1rem;
   color: #666;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .location-hours {
   font-size: 1rem;
   color: #0f4d63;
   line-height: 2;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .location-card a {
