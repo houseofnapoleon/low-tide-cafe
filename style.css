@@ -254,11 +254,13 @@ nav a:hover {
 }
 
 .location-card h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-family: 'Quidity';
+    src: url('fonts/Quidity.ttf') format('truetype');
+  font-size: 2.2rem;
+  font-weight: normal;
   color: #0f4d63;
-  margin-bottom: 18px;
-  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  letter-spacing: 0;
 }
 
 .location-address {
