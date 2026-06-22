@@ -205,32 +205,78 @@ nav a:hover {
   opacity: 1;
 }
 
+/* LOCATIONS SECTION */
+
+.locations {
+  background: #f7f3ef;
+  padding: 90px 8%;
+}
+
+.locations-container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.location-card {
+  padding: 0 50px;
+}
+
+.location-card:first-child {
+  border-right: 1px solid rgba(15, 77, 99, 0.12);
+}
+
 .location-card h3 {
+  font-size: 2.2rem;
   color: #0f4d63;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .location-address {
-  color: #0f4d63;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 24px;
 }
 
 .location-hours {
   color: #0f4d63;
-  font-weight: 500;
-  line-height: 1.7;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-bottom: 24px;
 }
 
 .location-card a {
   color: #0f4d63;
   text-decoration: none;
+  font-weight: 600;
 }
 
-.footer-right {
-  display: flex;
-  gap: 60px;
+.location-card a:hover {
+  opacity: 0.7;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .locations-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .location-card {
+    padding: 0;
+    text-align: center;
+  }
+
+  .location-card:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(15, 77, 99, 0.12);
+    padding-bottom: 50px;
+  }
+
 }
 
 /* MOBILE */
