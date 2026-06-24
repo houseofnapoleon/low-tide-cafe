@@ -107,7 +107,7 @@ nav a:hover {
 
   max-width: 650px;
 
-  color: white;
+  color: #fcfaf7;
 }
 
 .hero-content h1 {
@@ -140,7 +140,7 @@ nav a:hover {
 
 .btn-primary {
   background: #1f5f73;
-  color: white;
+  color: #fcfaf7;
 }
 
 .btn-primary:hover {
@@ -148,8 +148,8 @@ nav a:hover {
 }
 
 .btn-secondary {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #fcfaf7;
+  color: #fcfaf7;
 }
 
 .btn-secondary:hover {
@@ -390,7 +390,7 @@ nav a:hover {
 ======================================== */
 
 .menu-page {
-  background: #f7f3ef;
+  background: ##fcfaf7;
   padding: 140px 8% 100px;
 }
 
