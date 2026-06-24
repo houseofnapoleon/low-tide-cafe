@@ -214,6 +214,11 @@ nav a:hover {
 /* LOCATIONS SECTION */
 
 .locations-section {
+    background: #ffffff;
+    border-top: 1px solid #ece7e2;
+}
+
+.locations-section {
   background: #fefdfb;
   padding: 40px 8% 50px;
 }
