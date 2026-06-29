@@ -467,52 +467,82 @@ nav a:hover {
 
 /* HERO */
 
+/* ========================================
+   COFFEE HERO
+======================================== */
+
 .coffee-hero {
-    background: #fcfaf7;
-    padding: 180px 8% 100px;
+
+    position: relative;
+
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 180px 8% 120px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(252,250,247,0.98) 0%,
+            rgba(252,250,247,0.96) 22%,
+            rgba(252,250,247,0.88) 35%,
+            rgba(252,250,247,0.45) 52%,
+            rgba(252,250,247,0.05) 68%
+        ),
+        url("images/terrace_coffee.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
 }
 
 .coffee-hero-content {
-    max-width: 1300px;
-    margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 70px;
+    max-width: 600px;
 
-    align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .coffee-text h1 {
-    font-size: 4rem;
+
+    font-size: 4.6rem;
+
     color: #0f4d63;
-    margin-bottom: 10px;
+
     font-weight: 500;
+
+    margin-bottom: 10px;
 }
 
 .coffee-script {
+
     display: block;
+
     font-family: "Quidity", serif;
-    font-size: 2.6rem;
-    color: #1f5f73;
-    margin-bottom: 32px;
+
+    font-size: 2.8rem;
+
+    color: #2b6880;
+
     line-height: 1;
-    font-weight: normal;
+
+    margin-bottom: 38px;
 }
 
 .coffee-text p {
-    color: #666;
-    font-size: 1.08rem;
-    line-height: 1.9;
-    margin-bottom: 22px;
-    max-width: 560px;
-}
 
-.coffee-image img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 18px;
+    max-width: 520px;
+
+    color: #5f5f5f;
+
+    font-size: 1.12rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 24px;
 }
 
 /* SECTION TITLE */
