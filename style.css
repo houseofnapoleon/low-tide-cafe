@@ -502,7 +502,7 @@ nav a:hover {
 
     max-width: 600px;
 
-    position: relative;
+    position: center;
     z-index: 2;
 }
 
