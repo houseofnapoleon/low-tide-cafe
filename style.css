@@ -111,8 +111,9 @@ nav a:hover {
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 4.2rem;
   line-height: 1.1;
+  font-weight: 500;
   margin-bottom: 24px;
 }
 
@@ -411,8 +412,9 @@ nav a:hover {
 
 .menu-text h1 {
   color: #0f4d63;
-  font-size: 4.6rem;
+  font-size: 4.4rem;
   font-weight: 500;
+  
   margin-bottom: 24px;
 }
 
@@ -512,7 +514,7 @@ nav a:hover {
 
 .coffee-text h1 {
 
-    font-size: 4.6rem;
+    font-size: 4.4rem;
 
     color: #0f4d63;
 
