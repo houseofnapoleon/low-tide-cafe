@@ -800,4 +800,289 @@ nav a:hover {
 
 }
 
+/* ========================================
+   CAKES PAGE
+======================================== */
 
+/* HERO */
+
+.cakes-hero{
+
+    min-height:640px;
+
+    display:flex;
+    align-items:center;
+
+    padding:150px 8% 90px;
+
+    background-image:
+    linear-gradient(
+        90deg,
+        rgba(252,250,247,.98) 0%,
+        rgba(252,250,247,.96) 22%,
+        rgba(252,250,247,.82) 36%,
+        rgba(252,250,247,.45) 50%,
+        rgba(252,250,247,.05) 72%
+    ),
+    url("images/cakes-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.cakes-hero-content{
+
+    max-width:560px;
+}
+
+.cakes-hero h1{
+
+    font-size:4.3rem;
+    color:#0f4d63;
+    font-weight:500;
+
+    margin-bottom:10px;
+}
+
+.cakes-script{
+
+    display:block;
+
+    font-family:"Quidity", serif;
+
+    font-size:2.7rem;
+
+    color:#2b6880;
+
+    margin-bottom:34px;
+}
+
+.cakes-hero p{
+
+    color:#5f5f5f;
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+    max-width:520px;
+}
+
+
+/* COLLECTION */
+
+.cakes-selection{
+
+    background:#fcfaf7;
+
+    padding:90px 8%;
+}
+
+.cakes-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:start;
+
+    margin-top:60px;
+}
+
+
+/* LEFT */
+
+.cake-list{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.cake-option{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    border-bottom:1px solid #e8e3dc;
+
+    padding:24px 0;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    font-size:1.25rem;
+
+    color:#444;
+
+    transition:.3s;
+}
+
+.cake-option:hover{
+
+    color:#0f4d63;
+
+    padding-left:12px;
+}
+
+.cake-option.active{
+
+    color:#0f4d63;
+
+    font-weight:600;
+}
+
+
+/* RIGHT */
+
+.cake-details{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+}
+
+.cake-details h3{
+
+    color:#0f4d63;
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+}
+
+.cake-details p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+}
+
+.cake-size{
+
+    color:#888;
+
+    font-size:.95rem;
+}
+
+.cake-price{
+
+    font-size:2.5rem;
+
+    color:#0f4d63;
+
+    margin:35px 0;
+}
+
+
+/* HOUSE */
+
+.house-section{
+
+    padding:90px 8%;
+
+    text-align:center;
+
+    background:white;
+}
+
+.house-content{
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+.house-content h2{
+
+    color:#0f4d63;
+
+    font-size:2.5rem;
+
+    margin-bottom:24px;
+}
+
+.house-content p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:36px;
+}
+
+
+/* ORDER */
+
+.cakes-info{
+
+    background:#fcfaf7;
+
+    padding:80px 8%;
+
+    text-align:center;
+}
+
+.cakes-info h3{
+
+    color:#0f4d63;
+
+    margin-bottom:18px;
+
+    font-size:2rem;
+}
+
+.cakes-info p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    max-width:720px;
+
+    margin:0 auto 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.cakes-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+}
+
+.cakes-hero h1{
+
+    font-size:3rem;
+}
+
+.cakes-script{
+
+    font-size:2rem;
+}
+
+.cake-details{
+
+    padding:36px;
+}
+
+}
