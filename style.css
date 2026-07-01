@@ -464,10 +464,6 @@ nav a:hover {
    COFFEE BEANS PAGE
 ======================================== */
 
-/* ========================================
-   COFFEE BEANS PAGE
-======================================== */
-
 /* HERO */
 
 /* ========================================
@@ -510,6 +506,54 @@ nav a:hover {
     justify-content: center;
 
     min-height: 520px;
+}
+
+/* ========================================
+   COFFEE INFO
+======================================== */
+
+.coffee-info {
+
+    max-width: 850px;
+
+    margin: 0 auto 60px;
+
+    padding: 24px 34px;
+
+    background: #fcfaf7;
+
+    border: 1px solid #ece7e2;
+
+    border-radius: 16px;
+}
+
+.coffee-info-item {
+
+    text-align: center;
+}
+
+.coffee-info strong {
+
+    display: block;
+
+    color: #0f4d63;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.coffee-info p {
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
 }
 
 .coffee-text h1 {
