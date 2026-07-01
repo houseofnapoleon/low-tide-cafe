@@ -663,6 +663,50 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* ========================================
+   COLLECTION
+======================================== */
+
+.coffee-collection {
+
+    background: #fcfaf7;
+
+    text-align: center;
+
+    padding: 70px 8%;
+
+    border-top: 1px solid #ece7e2;
+    border-bottom: 1px solid #ece7e2;
+}
+
+.coffee-collection h3 {
+
+    color: #0f4d63;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+}
+
+.coffee-collection p {
+
+    max-width: 700px;
+
+    margin: 0 auto 16px;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+}
+
+.coffee-collection p:last-child {
+    margin-bottom: 0;
+}
+
 /* NOTE */
 
 .coffee-note {
