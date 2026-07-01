@@ -827,7 +827,7 @@ nav a:hover {
     url("images/hero_cakes.jpeg");
 
     background-size:cover;
-    background-position:center;
+    background-position:bottom;
     background-repeat:no-repeat;
 }
 
