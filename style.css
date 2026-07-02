@@ -89,13 +89,13 @@ nav a:hover {
     padding: 150px 8% 90px;
 
     background-image:
-        linear-gradient(
-            90deg,
-            rgba(252,250,247,.98) 0%,
-            rgba(252,250,247,.96) 22%,
-            rgba(252,250,247,.82) 38%,
-            rgba(252,250,247,.45) 54%,
-            rgba(252,250,247,0) 72%
+       linear-gradient(
+        90deg,
+        rgba(252,250,247,.86) 0%,
+        rgba(252,250,247,.72) 22%,
+        rgba(252,250,247,.45) 42%,
+        rgba(252,250,247,.18) 60%,
+        rgba(252,250,247,0) 78%
         ),
         url("images/hero.jpeg");
 
@@ -112,59 +112,100 @@ nav a:hover {
 
 }
 .hero-content {
-  position: relative;
-  z-index: 2;
 
-  max-width: 650px;
+    position: relative;
+    z-index: 2;
 
-  color: #fcfaf7;
+    max-width: 650px;
+
+    color: #ffffff;
+
 }
 
 .hero-content h1 {
-  font-size: 4.2rem;
-  line-height: 1.1;
-  font-weight: 500;
-  margin-bottom: 24px;
+
+    font-size: 4.2rem;
+    line-height: 1.08;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    margin-bottom: 24px;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,.12);
+
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 35px;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+
+    color: rgba(255,255,255,.95);
+
+    margin-bottom: 40px;
+
 }
+
 
 /* BUTTONS */
 
 .hero-buttons {
-  display: flex;
-  gap: 16px;
+
+    display: flex;
+    gap: 16px;
+
 }
 
 .btn-primary,
 .btn-secondary {
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+
+    text-decoration: none;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: .25s ease;
+
 }
 
 .btn-primary {
-  background: #1f5f73;
-  color: #fcfaf7;
+
+    background: #0f4d63;
+
+    color: #ffffff;
+
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
+
+    background: #165d77;
+
+    transform: translateY(-2px);
+
 }
 
 .btn-secondary {
-  border: 1px solid #fcfaf7;
-  color: #fcfaf7;
+
+    border: 2px solid rgba(255,255,255,.9);
+
+    color: #ffffff;
+
+    background: transparent;
+
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.1);
+
+    background: #ffffff;
+
+    color: #0f4d63;
+
+    transform: translateY(-2px);
+
 }
 
 .footer {
