@@ -78,29 +78,39 @@ nav a:hover {
 /* HERO */
 
 .hero {
-  position: relative;
 
-  height: 100vh;
-  min-height: 700px;
+    position: relative;
 
-  background-image: url("images/hero.jpeg");
-  background-size: cover;
-  background-position: bottom;
+    min-height: 640px;
 
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  padding-left: 8%;
-  padding-right: 8%;
+    padding: 150px 8% 90px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(252,250,247,.98) 0%,
+            rgba(252,250,247,.96) 22%,
+            rgba(252,250,247,.82) 38%,
+            rgba(252,250,247,.45) 54%,
+            rgba(252,250,247,0) 72%
+        ),
+        url("images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .overlay {
-  position: absolute;
-  inset: 0;
 
-  background: rgba(0, 0, 0, 0.28);
+    position: absolute;
+    inset: 0;
+
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
