@@ -1115,7 +1115,7 @@ nav a:hover {
         url("images/hero_about.png");
 
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
