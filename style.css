@@ -90,19 +90,21 @@ nav a:hover {
 
     padding: 150px 10% 90px;
 
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(247,243,239,.96) 0%,
-            rgba(247,243,239,.92) 22%,
-            rgba(247,243,239,.74) 42%,
-            rgba(247,243,239,.35) 60%,
-            rgba(247,243,239,0) 78%
-        ),
-        url("images/hero.jpeg");
+background-image:
+    linear-gradient(
+        90deg,
+        rgba(247,243,239,1) 0%,
+        rgba(247,243,239,.98) 18%,
+        rgba(247,243,239,.92) 36%,
+        rgba(247,243,239,.72) 52%,
+        rgba(247,243,239,.45) 66%,
+        rgba(247,243,239,.18) 80%,
+        rgba(247,243,239,0) 92%
+    ),
+    url("images/hero.jpeg");
 
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
 
 }
