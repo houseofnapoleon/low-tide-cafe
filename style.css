@@ -638,16 +638,20 @@ url("images/hero.jpeg");
 
     padding: 180px 8% 120px;
 
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(252,250,247,0.98) 0%,
-            rgba(252,250,247,0.96) 22%,
-            rgba(252,250,247,0.88) 35%,
-            rgba(252,250,247,0.45) 52%,
-            rgba(252,250,247,0.05) 68%
-        ),
-        url("images/terrace_coffee.png");
+   background-image:
+linear-gradient(
+    90deg,
+    rgba(247,243,239,.90) 0%,
+    rgba(247,243,239,.82) 35%,
+    rgba(247,243,239,.42) 62%,
+    rgba(247,243,239,0) 82%
+),
+linear-gradient(
+    180deg,
+    rgba(247,243,239,.06) 0%,
+    rgba(247,243,239,0) 28%
+),
+url("images/terrace_coffee.png");
 
     background-size: cover;
     background-position: center right;
@@ -972,16 +976,20 @@ url("images/hero.jpeg");
 
     padding:150px 8% 90px;
 
-    background-image:
-    linear-gradient(
-        90deg,
-        rgba(252,250,247,.98) 0%,
-        rgba(252,250,247,.96) 22%,
-        rgba(252,250,247,.82) 36%,
-        rgba(252,250,247,.45) 50%,
-        rgba(252,250,247,.05) 72%
-    ),
-    url("images/hero_cakes.jpeg");
+background-image:
+linear-gradient(
+    90deg,
+    rgba(247,243,239,.90) 0%,
+    rgba(247,243,239,.82) 35%,
+    rgba(247,243,239,.42) 62%,
+    rgba(247,243,239,0) 82%
+),
+linear-gradient(
+    180deg,
+    rgba(247,243,239,.06) 0%,
+    rgba(247,243,239,0) 28%
+),
+url("images/hero_cakes.jpeg");
 
     background-size:cover;
     background-position:top;
