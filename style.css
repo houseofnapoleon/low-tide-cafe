@@ -1422,7 +1422,7 @@ nav a:hover {
         url("images/hero_contact.jpeg");
 
     background-size: cover;
-    background-position: center;
+    background-position: top right;
     background-repeat: no-repeat;
 
 }
