@@ -632,7 +632,7 @@ url("images/hero.jpeg");
     min-height: 640px;
 
     display: flex;
-    align-items: right center;
+    align-items: center;
 
     padding: 150px 8% 90px;
 
@@ -652,7 +652,7 @@ linear-gradient(
 url("images/terrace_coffee.png");
 
     background-size: cover;
-    background-position: center right;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
