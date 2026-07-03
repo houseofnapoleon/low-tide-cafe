@@ -228,5 +228,114 @@
 
 </footer>
 
+  <!-- ========================================
+     COFFEE ORDER MODAL
+======================================== -->
+
+<div class="coffee-modal" id="coffeeModal">
+
+    <div class="coffee-modal-box">
+
+        <button class="coffee-modal-close" type="button">
+            ×
+        </button>
+
+        <h2>Take Home Coffee</h2>
+
+        <p class="modal-type" id="modalType">
+            Current Espresso
+        </p>
+
+        <p class="modal-price">
+            €<span id="modalPrice">16</span>
+        </p>
+
+        <form id="coffeeOrderForm">
+
+            <label>
+
+                Grind
+
+                <select name="grind" required>
+
+                    <option>Whole Bean</option>
+                    <option>Espresso</option>
+                    <option>Moka Pot</option>
+                    <option>Filter</option>
+                    <option>French Press</option>
+
+                </select>
+
+            </label>
+
+            <label>
+
+                Quantity
+
+                <input
+                    type="number"
+                    name="quantity"
+                    min="1"
+                    value="1"
+                    required
+                >
+
+            </label>
+
+            <label>
+
+                Collect From
+
+                <select name="collection" required>
+
+                    <option>Fuengirola</option>
+                    <option>Mijas Pueblo</option>
+
+                </select>
+
+            </label>
+
+            <label>
+
+                Your Name
+
+                <input
+                    type="text"
+                    name="name"
+                    required
+                >
+
+            </label>
+
+            <label>
+
+                Email
+
+                <input
+                    type="email"
+                    name="email"
+                    required
+                >
+
+            </label>
+
+            <button type="submit" class="menu-btn">
+
+                Continue
+
+            </button>
+
+        </form>
+
+        <p class="modal-note">
+
+            You'll receive payment instructions after submitting your order.
+
+        </p>
+
+    </div>
+
+</div>
+  
 </body>
 </html>
