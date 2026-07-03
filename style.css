@@ -660,6 +660,13 @@ url("images/terrace_coffee.png");
 
     max-width: 560px;
 
+.about-hero h1 {
+  
+  font-size: 4.3rem;
+  color: #0f4d63;
+  font-weight: 500;
+  margin-bottom: 10px;
+
 }
 
 /* ========================================
