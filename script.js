@@ -80,20 +80,37 @@ coffeeForm.addEventListener("submit", function(e){
             email: this.email.value
         }
 
-    ).then(function(){
+  ).then(function(){
 
-        alert("Thank you! Your coffee has been reserved.");
+    coffeeForm.reset();
 
-        coffeeForm.reset();
+    closeCoffeeModal();
 
-        closeCoffeeModal();
+    document.getElementById("successModal")
+        .classList.add("active");
 
-    }).catch(function(error){
+}).catch(function(error){
 
-        alert("Something went wrong. Please try again.");
+    alert("Something went wrong. Please try again.");
 
-        console.error(error);
+    console.error(error);
 
-    });
+});
+    const successModal = document.getElementById("successModal");
+const successClose = document.getElementById("successClose");
+
+successClose.addEventListener("click", function(){
+
+    successModal.classList.remove("active");
+
+});
+
+successModal.addEventListener("click", function(e){
+
+    if(e.target === successModal){
+
+        successModal.classList.remove("active");
+
+    }
 
 });
