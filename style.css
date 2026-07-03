@@ -201,11 +201,11 @@ url("images/hero.jpeg");
 
 .btn-secondary {
 
+    background: rgba(255,255,255,.55);
+
     border: 2px solid #0f4d63;
 
     color: #0f4d63;
-
-    background: transparent;
 
 }
 
@@ -214,8 +214,6 @@ url("images/hero.jpeg");
     background: #0f4d63;
 
     color: #ffffff;
-
-    transform: translateY(-2px);
 
 }
 
