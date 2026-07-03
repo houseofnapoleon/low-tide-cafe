@@ -1958,3 +1958,204 @@ url("images/hero_contact.jpeg");
     }
 
 }
+
+/* ========================================
+   COFFEE ORDER MODAL
+======================================== */
+
+.coffee-modal {
+
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+
+    background: rgba(0,0,0,.45);
+
+    z-index: 5000;
+
+}
+
+.coffee-modal.active {
+
+    display: flex;
+
+}
+
+.coffee-modal-box {
+
+    position: relative;
+
+    width: 100%;
+    max-width: 520px;
+
+    background: #fcfaf7;
+
+    border-radius: 22px;
+
+    padding: 42px;
+
+    box-shadow: 0 25px 70px rgba(0,0,0,.15);
+
+}
+
+.coffee-modal h2 {
+
+    color: #0f4d63;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+
+}
+
+.modal-type {
+
+    color: #666;
+
+    font-size: 1rem;
+
+    margin-bottom: 8px;
+
+}
+
+.modal-price {
+
+    color: #0f4d63;
+
+    font-size: 2.4rem;
+
+    font-weight: 500;
+
+    margin-bottom: 34px;
+
+}
+
+.coffee-modal-close {
+
+    position: absolute;
+
+    top: 18px;
+    right: 22px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 2rem;
+
+    color: #999;
+
+    transition: .2s;
+
+}
+
+.coffee-modal-close:hover {
+
+    color: #0f4d63;
+
+}
+
+#coffeeOrderForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+#coffeeOrderForm label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    color: #0f4d63;
+
+    font-size: .95rem;
+
+    font-weight: 600;
+
+}
+
+#coffeeOrderForm input,
+#coffeeOrderForm select {
+
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid #d9d9d9;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 1rem;
+
+    transition: .2s;
+
+}
+
+#coffeeOrderForm input:focus,
+#coffeeOrderForm select:focus {
+
+    outline: none;
+
+    border-color: #0f4d63;
+
+}
+
+#coffeeOrderForm .menu-btn {
+
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 12px;
+
+}
+
+.modal-note {
+
+    margin-top: 24px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: .92rem;
+
+    line-height: 1.6;
+
+}
+
+@media (max-width:768px) {
+
+    .coffee-modal {
+
+        padding: 18px;
+
+    }
+
+    .coffee-modal-box {
+
+        padding: 30px 24px;
+
+    }
+
+}
