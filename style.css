@@ -629,8 +629,6 @@ url("images/hero.jpeg");
 
 .coffee-hero {
 
-    position: relative;
-
     min-height: 640px;
 
     display: flex;
