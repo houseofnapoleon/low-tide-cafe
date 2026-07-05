@@ -236,6 +236,102 @@
 
 </footer>
   
+  <!-- ========================================
+     CAKE ORDER MODAL
+======================================== -->
+
+<div class="cake-modal" id="cakeModal">
+
+    <div class="cake-modal-box">
+
+        <button class="cake-modal-close" type="button">
+            ×
+        </button>
+
+        <h2>Order Your Cake</h2>
+
+        <p class="modal-type" id="modalCake">
+            Basque Cheesecake
+        </p>
+
+        <p class="modal-price">
+            €<span id="modalCakePrice">45</span>
+        </p>
+
+        <form id="cakeOrderForm">
+
+            <label>
+
+                Collection
+
+                <select name="collection" required>
+
+                    <option>Fuengirola</option>
+                    <option>Mijas Pueblo</option>
+
+                </select>
+
+            </label>
+
+            <label>
+
+                Preferred Collection Date
+
+                <input
+                    type="date"
+                    name="date"
+                    required
+                >
+
+            </label>
+
+            <label>
+
+                Your Name
+
+                <input
+                    type="text"
+                    name="name"
+                    required
+                >
+
+            </label>
+
+            <label>
+
+                Email
+
+                <input
+                    type="email"
+                    name="email"
+                    required
+                >
+
+            </label>
+
+            <button
+                type="submit"
+                class="btn-primary">
+
+                Continue
+
+            </button>
+
+        </form>
+
+        <p class="modal-note">
+
+            Cakes are made to order.
+            Please allow at least 48 hours' notice.
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script src="script.js"></script>
   
 </body>
