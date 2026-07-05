@@ -99,8 +99,10 @@ if (coffeeModal) {
 
             closeCoffeeModal();
 
-            successModal.classList.add("active");
+alert("SUCCESS");
 
+successModal.classList.add("active");
+            
         }).catch((error) => {
 
             alert("Something went wrong. Please try again.");
