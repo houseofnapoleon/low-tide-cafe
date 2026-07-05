@@ -1,149 +1,57 @@
+// ========================================
+// EMAILJS
+// ========================================
+
 emailjs.init({
     publicKey: "DidxJRtj3JlnRkMJ2"
 });
 
 // ========================================
-// COFFEE ORDER MODAL
+// COFFEE MODAL
 // ========================================
 
 const coffeeModal = document.getElementById("coffeeModal");
 
-const modalType = document.getElementById("modalType");
-const modalPrice = document.getElementById("modalPrice");
+if (coffeeModal) {
 
-const orderButtons = document.querySelectorAll(".order-coffee");
+    const modalType = document.getElementById("modalType");
+    const modalPrice = document.getElementById("modalPrice");
 
-const closeModalButton = document.querySelector(".coffee-modal-close");
+    const orderButtons = document.querySelectorAll(".order-coffee");
 
-orderButtons.forEach(button => {
+    const closeButton = coffeeModal.querySelector(".coffee-modal-close");
 
-    button.addEventListener("click", function (e) {
+    function closeCoffeeModal() {
 
-        e.preventDefault();
+        coffeeModal.classList.remove("active");
+        document.body.style.overflow = "";
 
-        modalType.textContent = this.dataset.type;
-        modalPrice.textContent = this.dataset.price;
+    }
 
-        coffeeModal.classList.add("active");
+    orderButtons.forEach(button => {
 
-        document.body.style.overflow = "hidden";
+        button.addEventListener("click", function(e){
+
+            e.preventDefault();
+
+            modalType.textContent = this.dataset.type;
+            modalPrice.textContent = this.dataset.price;
+
+            coffeeModal.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        });
 
     });
 
-});
+    closeButton.addEventListener("click", closeCoffeeModal);
 
-closeModalButton.addEventListener("click", closeCoffeeModal);
+    coffeeModal.addEventListener("click", function(e){
 
-coffeeModal.addEventListener("click", function (e) {
+        if(e.target === coffeeModal){
 
-    if (e.target === coffeeModal) {
-
-        closeCoffeeModal();
-
-    }
-
-});
-
-document.addEventListener("keydown", function (e) {
-
-    if (e.key === "Escape") {
-
-        closeCoffeeModal();
-
-    }
-
-});
-
-function closeCoffeeModal() {
-
-    coffeeModal.classList.remove("active");
-
-    document.body.style.overflow = "";
-
-}
-
-const coffeeForm = document.getElementById("coffeeOrderForm");
-
-coffeeForm.addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-    emailjs.send(
-        "service_98nz6ws",
-        "template_xi0oi9e",
-        {
-            coffee: modalType.textContent,
-            price: modalPrice.textContent,
-            grind: this.grind.value,
-            collection: this.collection.value,
-            name: this.name.value,
-            email: this.email.value
-        }
-
-  ).then(function(){
-
-    coffeeForm.reset();
-
-    closeCoffeeModal();
-
-    document.getElementById("successModal")
-        .classList.add("active");
-
-}).catch(function(error){
-
-    alert("Something went wrong. Please try again.");
-
-    console.error(error);
-
-});
-    const successModal = document.getElementById("successModal");
-const successClose = document.getElementById("successClose");
-
-successClose.addEventListener("click", function(){
-
-    successModal.classList.remove("active");
-
-});
-
-successModal.addEventListener("click", function(e){
-
-    if(e.target === successModal){
-
-        successModal.classList.remove("active");
-
-    }
-
-});
-
-
-                            // ========================================
-// CAKE ORDER MODAL
-// ========================================
-
-const cakeModal = document.getElementById("cakeModal");
-
-if (cakeModal) {
-
-    const cakeButton = document.getElementById("cake-order");
-    const cakeCloseButton = cakeModal.querySelector(".coffee-modal-close");
-
-    cakeButton.addEventListener("click", function(e){
-
-        e.preventDefault();
-
-        cakeModal.classList.add("active");
-
-        document.body.style.overflow = "hidden";
-
-    });
-
-    cakeCloseButton.addEventListener("click", closeCakeModal);
-
-    cakeModal.addEventListener("click", function(e){
-
-        if(e.target === cakeModal){
-
-            closeCakeModal();
+            closeCoffeeModal();
 
         }
 
@@ -153,18 +61,82 @@ if (cakeModal) {
 
         if(e.key === "Escape"){
 
-            closeCakeModal();
+            closeCoffeeModal();
 
         }
 
     });
 
-    function closeCakeModal(){
+    // ========================================
+    // COFFEE FORM
+    // ========================================
 
-        cakeModal.classList.remove("active");
+    const coffeeForm = document.getElementById("coffeeOrderForm");
 
-        document.body.style.overflow = "";
+    coffeeForm.addEventListener("submit", function(e){
 
-    }
+        e.preventDefault();
+
+        emailjs.send(
+
+            "service_98nz6ws",
+            "template_xi0oi9e",
+
+            {
+
+                coffee: modalType.textContent,
+                price: modalPrice.textContent,
+                grind: this.grind.value,
+                collection: this.collection.value,
+                name: this.name.value,
+                email: this.email.value
+
+            }
+
+        ).then(() => {
+
+            coffeeForm.reset();
+
+            closeCoffeeModal();
+
+            successModal.classList.add("active");
+
+        }).catch((error) => {
+
+            alert("Something went wrong. Please try again.");
+
+            console.error(error);
+
+        });
+
+    });
+
+}
+
+// ========================================
+// SUCCESS MODAL
+// ========================================
+
+const successModal = document.getElementById("successModal");
+
+if (successModal) {
+
+    const successClose = document.getElementById("successClose");
+
+    successClose.addEventListener("click", function(){
+
+        successModal.classList.remove("active");
+
+    });
+
+    successModal.addEventListener("click", function(e){
+
+        if(e.target === successModal){
+
+            successModal.classList.remove("active");
+
+        }
+
+    });
 
 }
