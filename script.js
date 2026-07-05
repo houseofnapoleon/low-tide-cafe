@@ -114,3 +114,57 @@ successModal.addEventListener("click", function(e){
     }
 
 });
+
+
+                            // ========================================
+// CAKE ORDER MODAL
+// ========================================
+
+const cakeModal = document.getElementById("cakeModal");
+
+if (cakeModal) {
+
+    const cakeButton = document.getElementById("cake-order");
+    const cakeCloseButton = cakeModal.querySelector(".coffee-modal-close");
+
+    cakeButton.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        cakeModal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+    cakeCloseButton.addEventListener("click", closeCakeModal);
+
+    cakeModal.addEventListener("click", function(e){
+
+        if(e.target === cakeModal){
+
+            closeCakeModal();
+
+        }
+
+    });
+
+    document.addEventListener("keydown", function(e){
+
+        if(e.key === "Escape"){
+
+            closeCakeModal();
+
+        }
+
+    });
+
+    function closeCakeModal(){
+
+        cakeModal.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+}
