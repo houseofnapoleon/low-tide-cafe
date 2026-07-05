@@ -142,3 +142,73 @@ if (successModal) {
     });
 
 }
+
+// ========================================
+// CAKE SWITCHER
+// ========================================
+
+const cakeData = {
+
+    basque: {
+        title: "Basque Cheesecake",
+        description: "Creamy baked cheesecake with a beautifully caramelised top.",
+        price: "45"
+    },
+
+    pistachio: {
+        title: "Pistachio Cheesecake",
+        description: "Rich baked cheesecake finished with roasted pistachios.",
+        price: "48"
+    },
+
+    chocolate: {
+        title: "Chocolate Cake",
+        description: "Moist chocolate sponge layered with silky chocolate cream.",
+        price: "48"
+    },
+
+    orange: {
+        title: "Orange Almond (GF)",
+        description: "Gluten-free almond cake with fresh orange.",
+        price: "45"
+    },
+
+    napoleon: {
+        title: "Napoleon",
+        description: "Handcrafted in collaboration with House of Napoleon.",
+        price: "45"
+    }
+
+};
+
+const cakeButtons = document.querySelectorAll(".cake-option");
+
+if (cakeButtons.length) {
+
+    const cakeTitle = document.getElementById("cake-title");
+    const cakeDescription = document.getElementById("cake-description");
+    const cakePrice = document.getElementById("cake-price");
+    const orderButton = document.getElementById("cake-order");
+
+    cakeButtons.forEach(button => {
+
+        button.addEventListener("click", function(){
+
+            cakeButtons.forEach(btn => btn.classList.remove("active"));
+
+            this.classList.add("active");
+
+            const cake = cakeData[this.dataset.cake];
+
+            cakeTitle.textContent = cake.title;
+            cakeDescription.textContent = cake.description;
+            cakePrice.textContent = "€" + cake.price;
+
+            orderButton.dataset.cake = cake.title;
+            orderButton.dataset.price = cake.price;
+
+        });
+
+    });
+
+}
