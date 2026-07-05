@@ -212,3 +212,63 @@ if (cakeButtons.length) {
     });
 
 }
+
+// ========================================
+// CAKE MODAL
+// ========================================
+
+const cakeModal = document.getElementById("cakeModal");
+
+if (cakeModal) {
+
+    const cakeOrderButton = document.getElementById("cake-order");
+
+    const modalCake = document.getElementById("modalCake");
+    const modalCakePrice = document.getElementById("modalCakePrice");
+
+    const cakeCloseButton = cakeModal.querySelector(".coffee-modal-close");
+
+    function closeCakeModal(){
+
+        cakeModal.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+    cakeOrderButton.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        modalCake.textContent = this.dataset.cake;
+        modalCakePrice.textContent = this.dataset.price;
+
+        cakeModal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+    cakeCloseButton.addEventListener("click", closeCakeModal);
+
+    cakeModal.addEventListener("click", function(e){
+
+        if(e.target === cakeModal){
+
+            closeCakeModal();
+
+        }
+
+    });
+
+    document.addEventListener("keydown", function(e){
+
+        if(e.key === "Escape"){
+
+            closeCakeModal();
+
+        }
+
+    });
+
+}
