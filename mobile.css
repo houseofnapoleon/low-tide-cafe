@@ -64,25 +64,29 @@ section{
 
     justify-content:center;
 
-    gap:10px;
+    gap:12px;
 
 }
 
 .logo-icon{
 
-    width:46px;
+    width:58px;
 
-    height:46px;
+    height:58px;
+
+    flex:0 0 58px;
 
     object-fit:contain;
-
-    flex:0 0 46px;
 
 }
 
 .logo-text{
 
-    height:38px;
+    width:auto;
+
+    height:48px;
+
+    object-fit:contain;
 
 }
 
