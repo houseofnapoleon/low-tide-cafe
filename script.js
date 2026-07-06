@@ -82,16 +82,18 @@ if (coffeeModal) {
             "service_98nz6ws",
             "template_xi0oi9e",
 
-            {
+     {
 
-                coffee: modalType.textContent,
-                price: modalPrice.textContent,
-                grind: this.grind.value,
-                collection: this.collection.value,
-                name: this.name.value,
-                email: this.email.value
+    product: "Coffee",
+    item: modalType.textContent,
+    price: modalPrice.textContent,
+    grind: this.grind.value,
+    date: "-",
+    collection: this.collection.value,
+    name: this.name.value,
+    email: this.email.value
 
-            }
+}
 
         ).then(() => {
 
@@ -268,6 +270,64 @@ if (cakeModal) {
             closeCakeModal();
 
         }
+
+    });
+
+}
+
+// ========================================
+// CAKE FORM
+// ========================================
+
+const cakeForm = document.getElementById("cakeOrderForm");
+
+if (cakeForm) {
+
+    cakeForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        emailjs.send(
+
+            "service_98nz6ws",
+            "template_xi0oi9e",
+
+            {
+
+                product: "Cake",
+                item: document.getElementById("modalCake").textContent,
+                price: document.getElementById("modalCakePrice").textContent,
+                grind: "-",
+                date: this.date.value,
+                collection: this.collection.value,
+                name: this.name.value,
+                email: this.email.value
+
+            }
+
+        ).then(() => {
+
+            cakeForm.reset();
+
+            cakeModal.classList.remove("active");
+
+            document.body.style.overflow = "";
+
+            document.getElementById("successTitle").textContent =
+                "Cake Order Received";
+
+            document.getElementById("successText").textContent =
+                "Thank you! We've received your cake order. We'll contact you shortly with payment instructions and confirm your collection date.";
+
+            successModal.classList.add("active");
+
+        }).catch((error) => {
+
+            alert("Something went wrong. Please try again.");
+
+            console.error(error);
+
+        });
 
     });
 
