@@ -54,21 +54,37 @@ section{
 
 }
 
+/* ---------- LOGO ---------- */
+
 .logo-wrap{
 
+    display:flex;
+
+    align-items:center;
+
     justify-content:center;
+
+    gap:10px;
 
 }
 
 .logo-icon{
 
+    width:46px;
+
     height:46px;
+
+    object-fit:contain;
+
+    flex:0 0 46px;
 
 }
 
 .logo-text{
 
-    height:28px;
+    width:auto;
+
+    height:32px;
 
 }
 
@@ -349,4 +365,68 @@ section{
 
 /* ---------- FOOTER ---------- */
 
+   /* ---------- LOGO ---------- */
+
+.logo-wrap{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.logo-icon{
+
+    width:auto;
+
+    height:42px;
+
+    flex-shrink:0;
+
+}
+
+.logo-text{
+
+    width:auto;
+
+    height:24px;
+
+    flex-shrink:0;
+
+}
+
+
+/* Footer */
+
+.footer-home{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.footer-home .logo-icon{
+
+    width:auto;
+
+    height:42px;
+
+}
+
+.footer-home .footer-logo{
+
+    width:auto;
+
+    height:24px;
+
+}
 }
