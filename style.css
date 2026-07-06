@@ -2081,4 +2081,217 @@ url("images/hero_contact.jpeg");
 
 }
 
+
+/* ========================================
+   SUCCESS MODAL
+======================================== */
+
+.success-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s;
+
+    z-index:3000;
+
+}
+
+.success-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.success-box{
+
+    width:90%;
+
+    max-width:470px;
+
+    background:#fcfaf7;
+
+    border-radius:16px;
+
+    padding:50px 42px;
+
+    text-align:center;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.18);
+
+}
+
+.success-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 24px;
+
+    border-radius:50%;
+
+    background:#1f5f73;
+
+    color:#fcfaf7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    font-weight:600;
+
+}
+
+.success-box h2{
+
+    font-size:2.1rem;
+
+    color:#1f5f73;
+
+    margin-bottom:18px;
+
+}
+
+.success-box p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.success-box .menu-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+/* ========================================
+   CAKE MODAL
+======================================== */
+
+.cake-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    z-index:9999;
+
+}
+
+.cake-modal.active{
+
+    display:flex;
+
+}
+
+.cake-modal-box{
+
+    background:#fff;
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    position:relative;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.cake-modal-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:20px;
+
+    background:none;
+
+    border:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+#cakeOrderForm{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+#cakeOrderForm label{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    font-weight:500;
+
+    color:#444;
+
+}
+
+#cakeOrderForm input,
+#cakeOrderForm select{
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+}
  
