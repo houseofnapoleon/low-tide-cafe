@@ -1593,9 +1593,9 @@ url("images/hero_about.png");
 linear-gradient(
     90deg,
     rgba(247,243,239,.90) 0%,
-    rgba(247,243,239,.82) 35%,
-    rgba(247,243,239,.42) 62%,
-    rgba(247,243,239,0) 82%
+    rgba(247,243,239,.82) 45%,
+    rgba(247,243,239,.42) 82%,
+    rgba(247,243,239,0) 95%
 ),
 linear-gradient(
     180deg,
