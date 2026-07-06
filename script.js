@@ -153,31 +153,31 @@ const cakeData = {
 
     basque: {
         title: "Basque Cheesecake",
-        description: "Creamy baked cheesecake with a beautifully caramelised top.",
+        description: "Creamy tonka-bean infused cheesecake with a beautifully caramelised top.",
         price: "45"
     },
 
     pistachio: {
         title: "Pistachio Cheesecake",
-        description: "Rich baked cheesecake finished with roasted pistachios.",
+        description: "Rich baked cheesecake finished with pistachio cream.",
         price: "48"
     },
 
     chocolate: {
-        title: "Chocolate Cake",
-        description: "Moist chocolate sponge layered with silky chocolate cream.",
+        title: "Argentinian Chocolate Cake",
+        description: "Moist chocolate cake with silky chocolate ganache with a touch of dulce de leche.",
         price: "48"
     },
 
     orange: {
         title: "Orange Almond (GF)",
-        description: "Gluten-free almond cake with fresh orange.",
+        description: "Juicy gluten-free orange and almond cake.",
         price: "45"
     },
 
     napoleon: {
         title: "Napoleon",
-        description: "Handcrafted in collaboration with House of Napoleon.",
+        description: "Millefeuille handcrafted in collaboration with House of Napoleon.",
         price: "45"
     }
 
