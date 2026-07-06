@@ -226,7 +226,7 @@ if (cakeModal) {
     const modalCake = document.getElementById("modalCake");
     const modalCakePrice = document.getElementById("modalCakePrice");
 
-    const cakeCloseButton = cakeModal.querySelector(".coffee-modal-close");
+    const cakeCloseButton = cakeModal.querySelector(".cake-modal-close");
 
     function closeCakeModal(){
 
