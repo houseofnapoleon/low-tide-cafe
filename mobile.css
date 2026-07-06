@@ -1,1 +1,160 @@
+/* ========================================
+   TABLET
+======================================== */
 
+@media (max-width:1000px){
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width:768px){
+
+/* ---------- GLOBAL ---------- */
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+section{
+
+    padding-left:7%;
+
+    padding-right:7%;
+
+}
+
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+
+    padding:18px 7%;
+
+}
+
+.navbar nav{
+
+    display:none;
+
+}
+
+.logo-wrap{
+
+    justify-content:center;
+
+}
+
+.logo-icon{
+
+    height:46px;
+
+}
+
+.logo-text{
+
+    height:28px;
+
+}
+
+
+
+/* ---------- HERO ---------- */
+
+.hero,
+.menu-hero,
+.cakes-hero,
+.coffee-hero,
+.about-hero,
+.contact-hero{
+
+    min-height:auto;
+
+    padding:120px 7% 70px;
+
+    background-position:center;
+
+}
+
+.hero h1,
+.menu-hero h1,
+.cakes-hero h1,
+.coffee-hero h1,
+.about-hero h1,
+.contact-hero h1{
+
+    font-size:2.8rem;
+
+}
+
+.hero-script,
+.menu-script,
+.cakes-script,
+.coffee-script,
+.about-script,
+.contact-script{
+
+    font-size:2rem;
+
+}
+
+.hero p,
+.menu-hero p,
+.cakes-hero p,
+.coffee-hero p,
+.about-hero p,
+.contact-hero p{
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+}
+
+
+/* ---------- HOME ---------- */
+
+
+
+/* ---------- MENU ---------- */
+
+
+
+/* ---------- COFFEE ---------- */
+
+
+
+/* ---------- CAKES ---------- */
+
+
+
+/* ---------- ABOUT ---------- */
+
+
+
+/* ---------- CONTACT ---------- */
+
+
+
+/* ---------- MODALS ---------- */
+
+
+
+/* ---------- FOOTER ---------- */
+
+}
