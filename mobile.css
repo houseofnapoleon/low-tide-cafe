@@ -262,41 +262,6 @@ section{
    CAKES
 ======================================== */
 
-@media (max-width:768px){
-
-.cakes-wrapper{
-
-    grid-template-columns:1fr;
-
-    gap:36px;
-
-}
-
-.cake-details{
-
-    padding:30px;
-
-}
-
-.cake-details h3{
-
-    font-size:1.8rem;
-
-}
-
-.cake-price{
-
-    font-size:2rem;
-
-}
-
-.house-logo{
-
-    width:200px;
-
-}
-   /* ---------- CAKES ---------- */
-
 .cakes-wrapper{
 
     grid-template-columns:1fr;
@@ -307,7 +272,9 @@ section{
 
 .cake-list{
 
-    gap:0;
+    display:flex;
+
+    flex-direction:column;
 
 }
 
@@ -315,7 +282,7 @@ section{
 
     padding:16px 0;
 
-    font-size:1.05rem;
+    font-size:1rem;
 
 }
 
@@ -331,13 +298,39 @@ section{
 
 }
 
+.cake-details p{
+
+    font-size:.98rem;
+
+    line-height:1.7;
+
+}
+
 .cake-price{
 
     font-size:2rem;
 
-    margin:24px 0;
+    margin:22px 0;
 
 }
+
+.house-section{
+
+    padding:70px 7%;
+
+}
+
+.house-logo{
+
+    width:200px;
+
+    max-width:100%;
+
+}
+
+.cakes-info{
+
+    padding:70px 7%;
 
 }
 
