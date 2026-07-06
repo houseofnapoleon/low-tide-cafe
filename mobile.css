@@ -295,6 +295,49 @@ section{
     width:200px;
 
 }
+   /* ---------- CAKES ---------- */
+
+.cakes-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+.cake-list{
+
+    gap:0;
+
+}
+
+.cake-option{
+
+    padding:16px 0;
+
+    font-size:1.05rem;
+
+}
+
+.cake-details{
+
+    padding:26px;
+
+}
+
+.cake-details h3{
+
+    font-size:1.7rem;
+
+}
+
+.cake-price{
+
+    font-size:2rem;
+
+    margin:24px 0;
+
+}
 
 }
 
