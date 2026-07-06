@@ -1277,15 +1277,15 @@ url("images/hero_cakes.jpeg");
     align-items: center;
 
     padding: 150px 8% 90px;
-
+  
 background-image:
 linear-gradient(
     90deg,
     rgba(247,243,239,.90) 0%,
-    rgba(247,243,239,.76) 35%,
-    rgba(247,243,239,.22) 62%,
-    rgba(247,243,239,.06) 82%,
-    rgba(247,243,239,0) 100%
+    rgba(247,243,239,.68) 32%,
+    rgba(247,243,239,.12) 58%,
+    rgba(247,243,239,.02) 78%,
+    rgba(247,243,239,0) 92%
 ),
 linear-gradient(
     180deg,
@@ -1293,7 +1293,7 @@ linear-gradient(
     rgba(247,243,239,0) 28%
 ),
 url("images/hero_about.png");
-
+  
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
