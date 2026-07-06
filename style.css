@@ -1172,13 +1172,24 @@ url("images/hero_cakes.jpeg");
     margin:auto;
 }
 
-.house-content h2{
+.house-logo{
 
-    color:#0f4d63;
+    display:block;
 
-    font-size:2.5rem;
+    width:260px;
 
-    margin-bottom:24px;
+    max-width:90%;
+
+    margin:0 auto 32px;
+
+    transition:.3s;
+
+}
+
+.house-logo:hover{
+
+    transform:scale(1.03);
+
 }
 
 .house-content p{
