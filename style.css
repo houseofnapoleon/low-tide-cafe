@@ -2438,3 +2438,55 @@ url("images/hero_contact.jpeg");
     }
 
 }
+
+@media (max-width:768px){
+
+.hero,
+.menu-hero,
+.cakes-hero,
+.coffee-hero,
+.about-hero,
+.contact-hero{
+
+    min-height:auto;
+
+    padding:120px 7% 70px;
+
+    background-position:center;
+
+}
+
+.hero h1,
+.menu-hero h1,
+.cakes-hero h1,
+.coffee-hero h1,
+.about-hero h1,
+.contact-hero h1{
+
+    font-size:2.8rem;
+
+}
+
+.hero-script,
+.menu-script,
+.cakes-script,
+.coffee-script,
+.about-script,
+.contact-script{
+
+    font-size:2rem;
+
+}
+
+.hero p,
+.menu-hero p,
+.cakes-hero p,
+.coffee-hero p,
+.about-hero p,
+.contact-hero p{
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+}
