@@ -90,7 +90,17 @@ section{
 
 }
 
+/* ---------- SECTION HEADINGS ---------- */
 
+.section-heading h2{
+
+    font-size:1.7rem;
+
+    line-height:1.25;
+
+    margin-bottom:14px;
+
+}
 
 /* ---------- HERO ---------- */
 
@@ -375,6 +385,8 @@ section{
 
 
 /* ---------- FOOTER ---------- */
+
+   
 
    /* ---------- LOGO ---------- */
 
