@@ -383,11 +383,11 @@ section{
 
 .logo-icon{
 
-    width:auto;
+    width:58px;
 
-    height:42px;
+    height:58px;
 
-    flex-shrink:0;
+    flex:0 0 58px;
 
 }
 
@@ -395,7 +395,7 @@ section{
 
     width:auto;
 
-    height:24px;
+    height: 48px;
 
     flex-shrink:0;
 
@@ -428,7 +428,7 @@ section{
 
     width:auto;
 
-    height:24px;
+    height:48px;
 
 }
 }
