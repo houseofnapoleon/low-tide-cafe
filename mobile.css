@@ -209,12 +209,94 @@ section{
 
 
 
-/* ---------- COFFEE ---------- */
+/* ========================================
+   COFFEE
+======================================== */
+
+@media (max-width:768px){
+
+.coffee-grid{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+.coffee-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.coffee-card-image{
+
+    order:-1;
+
+}
+
+.coffee-card-image img{
+
+    height:260px;
+
+}
+
+.coffee-card-info{
+
+    padding:30px;
+
+}
+
+.coffee-meta{
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+}
 
 
+/* ========================================
+   CAKES
+======================================== */
 
-/* ---------- CAKES ---------- */
+@media (max-width:768px){
 
+.cakes-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:36px;
+
+}
+
+.cake-details{
+
+    padding:30px;
+
+}
+
+.cake-details h3{
+
+    font-size:1.8rem;
+
+}
+
+.cake-price{
+
+    font-size:2rem;
+
+}
+
+.house-logo{
+
+    width:200px;
+
+}
+
+}
 
 
 /* ---------- ABOUT ---------- */
