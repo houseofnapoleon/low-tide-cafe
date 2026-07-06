@@ -2416,3 +2416,25 @@ url("images/hero_contact.jpeg");
 
     line-height:1.6;
 }
+
+@media (max-width: 768px){
+
+    .navbar{
+
+        padding:18px 6%;
+
+    }
+
+    .navbar nav{
+
+        display:none;
+
+    }
+
+    .logo-text{
+
+        height:32px;
+
+    }
+
+}
