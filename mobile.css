@@ -226,7 +226,15 @@ section{
 
 /* ---------- MENU ---------- */
 
+.menu-text h1{
 
+    font-size:2.4rem;
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+
+}
 
 /* ========================================
    COFFEE
