@@ -2296,17 +2296,26 @@ url("images/hero_contact.jpeg");
 }
 
 /* ========================================
-   JOURNAL INTRO
+   JOURNAL
 ======================================== */
 
 .journal-intro{
 
-    padding:120px 0 80px;
+    padding:120px 8% 90px;
+
     text-align:center;
+
+    border-bottom:1px solid #ece7e2;
 
 }
 
 .journal-intro h1{
+
+    color:#0f4d63;
+
+    font-size:4.3rem;
+
+    font-weight:500;
 
     margin-bottom:18px;
 
@@ -2314,34 +2323,38 @@ url("images/hero_contact.jpeg");
 
 .journal-intro p{
 
-    max-width:640px;
+    max-width:700px;
+
     margin:0 auto;
+
     color:#666;
+
     line-height:1.8;
+
+    font-size:1.08rem;
 
 }
 
 
 /* ========================================
-   JOURNAL LIST
+   ARTICLES
 ======================================== */
 
 .journal-list{
 
-    padding-bottom:120px;
+    padding:30px 8% 120px;
 
 }
 
 .journal-post{
 
+    max-width:900px;
+
+    margin:0 auto;
+
     padding:55px 0;
-    border-top:1px solid #e7e2dc;
 
-}
-
-.journal-post:last-child{
-
-    border-bottom:1px solid #e7e2dc;
+    border-bottom:1px solid #ece7e2;
 
 }
 
@@ -2352,12 +2365,17 @@ url("images/hero_contact.jpeg");
 
 .journal-category{
 
-    margin-bottom:12px;
-    font-size:.78rem;
-    font-weight:500;
-    letter-spacing:.18em;
-    text-transform:uppercase;
+    margin-bottom:14px;
+
     color:#9c8b73;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
 
 }
 
@@ -2368,21 +2386,27 @@ url("images/hero_contact.jpeg");
 
 .journal-post h2{
 
-    margin:0 0 18px;
+    margin-bottom:18px;
 
 }
 
 .journal-post h2 a{
 
-    color:inherit;
+    color:#0f4d63;
+
     text-decoration:none;
-    transition:color .25s ease;
+
+    font-size:2.2rem;
+
+    font-weight:500;
+
+    transition:.25s;
 
 }
 
 .journal-post h2 a:hover{
 
-    color:#8b6b4a;
+    color:#2b6880;
 
 }
 
@@ -2393,9 +2417,12 @@ url("images/hero_contact.jpeg");
 
 .journal-post p{
 
-    max-width:680px;
-    margin:0 0 24px;
+    max-width:700px;
+
+    margin-bottom:24px;
+
     color:#666;
+
     line-height:1.8;
 
 }
@@ -2407,17 +2434,16 @@ url("images/hero_contact.jpeg");
 
 .read-more{
 
-    display:inline-block;
-    color:#222;
-    font-weight:500;
+    color:#0f4d63;
+
+    font-weight:600;
+
     text-decoration:none;
-    transition:all .25s ease;
 
 }
 
 .read-more:hover{
 
-    color:#8b6b4a;
-    padding-left:6px;
+    color:#2b6880;
 
 }
