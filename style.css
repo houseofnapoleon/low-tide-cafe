@@ -2294,4 +2294,130 @@ url("images/hero_contact.jpeg");
     font-size:1rem;
 
 }
- 
+
+/* ========================================
+   JOURNAL INTRO
+======================================== */
+
+.journal-intro{
+
+    padding:120px 0 80px;
+    text-align:center;
+
+}
+
+.journal-intro h1{
+
+    margin-bottom:18px;
+
+}
+
+.journal-intro p{
+
+    max-width:640px;
+    margin:0 auto;
+    color:#666;
+    line-height:1.8;
+
+}
+
+
+/* ========================================
+   JOURNAL LIST
+======================================== */
+
+.journal-list{
+
+    padding-bottom:120px;
+
+}
+
+.journal-post{
+
+    padding:55px 0;
+    border-top:1px solid #e7e2dc;
+
+}
+
+.journal-post:last-child{
+
+    border-bottom:1px solid #e7e2dc;
+
+}
+
+
+/* ========================================
+   CATEGORY
+======================================== */
+
+.journal-category{
+
+    margin-bottom:12px;
+    font-size:.78rem;
+    font-weight:500;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:#9c8b73;
+
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.journal-post h2{
+
+    margin:0 0 18px;
+
+}
+
+.journal-post h2 a{
+
+    color:inherit;
+    text-decoration:none;
+    transition:color .25s ease;
+
+}
+
+.journal-post h2 a:hover{
+
+    color:#8b6b4a;
+
+}
+
+
+/* ========================================
+   EXCERPT
+======================================== */
+
+.journal-post p{
+
+    max-width:680px;
+    margin:0 0 24px;
+    color:#666;
+    line-height:1.8;
+
+}
+
+
+/* ========================================
+   READ MORE
+======================================== */
+
+.read-more{
+
+    display:inline-block;
+    color:#222;
+    font-weight:500;
+    text-decoration:none;
+    transition:all .25s ease;
+
+}
+
+.read-more:hover{
+
+    color:#8b6b4a;
+    padding-left:6px;
+
+}
